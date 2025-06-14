@@ -14,17 +14,25 @@ footer{
     text-align: center;
 }
 
-
-
 .container{
     padding-top: 20px;
     
 }
-fieldset{
+.star{
     padding-top: 5px;
     margin-left: 10px;
     margin-right: 30px;
     color:#00ADB5;
+    width: 600px;
+}
+
+h1{
+    color: #00ADB5;
+    padding-bottom: 10px;
+}
+
+h2{
+    padding-bottom: 10px;
 }
 
 ul{
@@ -42,4 +50,47 @@ h3{
 p{
     padding-bottom: 5px;
     color: #cccccc;
+}
+
+.input input, textarea{
+    width:300px;
+    
+}
+
+.form{
+    padding-top:10px;
+}
+
+.input{
+    padding-bottom: 10px;
+}
+
+.email{
+    padding-bottom: 10px;
+}
+
+.email input{
+    width:300px;
+}
+
+.all{
+    display: flex;
+    padding-top: 10px;
+}
+
+.submit{
+    padding-top: 10px;
+    
+    
+}
+
+.submit input{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    color: #CCCCCC;
+    background-color: #1F1F1F;
+}
+.submit input:hover{
+    color: #00ADB5;
 }
