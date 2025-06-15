@@ -9,7 +9,7 @@ body{
 footer{
     background-color: #313030;
     padding: 20px;
-    margin-top: 400px;
+    margin-top: 120px;
     color: #CCCCCC;
     text-align: center;
 }
@@ -76,6 +76,7 @@ p{
 .all{
     display: flex;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .submit{
@@ -93,4 +94,13 @@ p{
 }
 .submit input:hover{
     color: #00ADB5;
+}
+
+.location {
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 200px;
 }
