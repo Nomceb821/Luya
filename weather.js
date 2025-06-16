@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const apiKey = "78b84fc8c29e5e7fdaebb1a8dca16c9b";
-  const city = "Radiokop";
+  const city = "Midrand";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   const locationElement = document.getElementById("location");
