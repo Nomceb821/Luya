@@ -1,5 +1,6 @@
 *{padding:0;
-margin:0;}
+margin:0;
+box-sizing: border-box;}
 
 body{
     background-color:#1F1F1F;
@@ -125,7 +126,6 @@ p{
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
-    border: 1px solid pink;
 }
 
 .submit{
