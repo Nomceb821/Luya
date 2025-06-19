@@ -8,9 +8,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Contact.html" class="active">Contact</a>
+                <a href="new_weather.html">Weather</a>
+            </nav>
+        </header>
         <div class="container">
-            <h1>Contact Information</h1>
-            <hr>
             <div class="all">
                 <div class="star">
                     <div class="Name">
@@ -27,22 +34,24 @@
                     </div>
                     <div class="Socials">
                         <h3>Socials</h3>
-                        <ul class="icons alt">
+                        <ul class="icons-alt">
                             <li><a href="https://github.com/Nomceb821" target="_blank"><i class="fab fa-github"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/nomcebonkomo3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 				        </ul>
                     </div>
                 </div>
                 <div class="form">
+                    <h2>Contact Me</h2>
+                    <p>Have questions or want to get in touch? Please fill out the form<br> below and we'll get back to you as soon as possible.</p>
                     <form action="https://formspree.io/f/mnnvvzro" method="POST">
                         <div class="input">
-                            <input type="text" placeholder="Your Name" name="Name"><br>
+                            <input type="text" placeholder="Your Name" name="Name" required><br>
                         </div>
                         <div class="email">
-                            <input type="text" placeholder="Your Email" name="Email"><br>
+                            <input type="text" placeholder="Your Email" name="Email" required><br>
                         </div>
                         <div class="text">
-                            <textarea name="message" placeholder="Your Message" rows="10" cols="30"></textarea><br>
+                            <textarea name="message" placeholder="Your Message" rows="10" cols="30" required></textarea><br>
                         </div>
                         <div class="submit">
                             <input type="submit" value="Submit">
@@ -50,13 +59,6 @@
                     </form>
                 </div>
             </div>
-            <div class="java">
-                <div class="location">
-                    <h2>📍My Current Location</h2>
-                    <p id="location">Fetching your location...</p>
-                </div>
-            </div>
-            <script src="location.js"></script>
             <footer>
                 &copy; 2025 Nomcebo's Portfolio. All rights reserved.
             </footer>

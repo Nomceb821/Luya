@@ -12,6 +12,7 @@ padding-bottom:5px;}
 
 header{
     padding: 20px;
+    background-color:  #00ADB5;
 }
 
 nav{text-align: center;}
@@ -19,10 +20,16 @@ nav{text-align: center;}
 nav a{
     margin-left: 60px;
     font-size: 18px; 
-    transition: color 0.3s ease;
+    
 }
 
-nav a:hover{color: #00ADB5;}
+nav a.active {
+  background-color: #FFFFFF;
+  color: #1F1F1F !important;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
 a{
     text-decoration: none;
@@ -40,16 +47,16 @@ a{
     margin-right: 350px;
 }
 
-h1{color: #cccccc;
+h1{color: #e7edf0;
 font-size: 50px;
 font-weight: 100%;}
 
-h3{color: #cccccc;
+h3{color: #e7edf0;
 padding-top: 20px;
 font-size: 30px;
 font-weight: lighter;}
 
-p{color: #cccccc;
+p{color: #e7edf0;
 padding-top: 20px;
 font-size: 20px;}
 
@@ -68,7 +75,7 @@ padding-top:60px;
     font-size: 20px;         /* big text */
     padding: 10px 20px 10px 20px;      /* big button size */
     background-color: #313030;
-    color: #cccccc;
+    color: #e7edf0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -83,5 +90,6 @@ footer{
     color: #CCCCCC;
     text-align: center;
 }
+
 
 
