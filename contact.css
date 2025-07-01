@@ -1,23 +1,32 @@
-*{padding:0;
-margin:0;
-box-sizing: border-box;}
-
-body{
-    background-color:#1F1F1F;
-    font-family: sans-serif;
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-footer{
-    background-color: #313030;
-    padding: 20px;
-    margin-top: 40px;
-    color: #CCCCCC;
-    text-align: center;
+/* Base Styles */
+body {
+  background-color: #1F1F1F;
+  font-family: sans-serif;
 }
 
-.form h2{
-    color: #cccccc;
+header {
+  padding: 20px;
+  background-color: #00ADB5;
 }
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin-left: 60px;
+  font-size: 18px;
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
 nav a.active {
   background-color: #FFFFFF;
   color: #1F1F1F !important;
@@ -25,196 +34,140 @@ nav a.active {
   border-radius: 6px;
   font-weight: bold;
 }
-header{
-    padding: 20px;
-    background-color:  #00ADB5;
+
+/* Container */
+.container {
+  padding: 40px 20px;
 }
 
-nav{text-align: center;}
-
-nav a{
-    margin-left: 60px;
-    font-size: 18px; 
-    
+/* Flex Layout for Cards */
+.all {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch; /* 🔥 Ensures equal height */
+  flex-wrap: wrap;
 }
 
-a{
-    text-decoration: none;
-    color: #333;
-    margin-left: 20px;
+/* Shared Card Styles */
+.star, .form {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px; /* 💪 Equal minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-icons-alt{
-    display: flex;
-    justify-content: center;
+/* Contact Info (Left Card) */
+.star h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
-.container{
-    padding-top: 20px;
-    
-}
-.star{
-    padding-top: 5px;
-    margin: 30px auto;
-    color:#00ADB5;
-    width: 600px;
-    background-color: #f9f9f9;
-    max-width: 460px;
-    border-radius: 8px;    /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
-
+.star p {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-
-
-h2{
-    padding-bottom: 10px;
-}
-
+/* Social Icons */
 .icons-alt {
   display: flex;
-  justify-content: center; /* centers icons horizontally */
-  gap: 6px; /* space between icons */
-  padding: 0;
-  margin: 0 auto; /* centers the list if using block-level layout */
+  justify-content: center;
+  gap: 10px;
   list-style: none;
+  padding: 0;
 }
 
-h3{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    color:#333;
-    margin-left: 20px;
-    text-align: center;
-    
+.icons-alt a {
+  color: #1F1F1F;
+  font-size: 24px;
+  transition: color 0.3s;
 }
 
-p{
-    padding-bottom: 5px;
-    color: #333;
-    margin-left: 20px;
+.icons-alt a:hover {
+  color: #00ADB5;
 }
 
-.star p{
-    text-align: center;
-
-}
-
-
-.input input, textarea{
-    width:300px;
-    
-}
-
-.form{
-    padding-top:10px;
-}
-
-.input{
-    padding-bottom: 10px;
-}
-
-.email{
-    padding-bottom: 10px;
-}
-
-.email input{
-    width:300px;
-}
-
-.all{
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.submit{
-    padding-top: 10px;
-    
-    
-}
-
-.submit input{
-    width: 60px;
-    height: 40px;
-    border-radius: 10px;
-    color: #CCCCCC;
-    background-color: #1F1F1F;
-}
-.submit input:hover{
-    color: #00ADB5;
-}
-
-.location {
-  background: white;
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 200px;
-}
-
-.form {
-  max-width: 400px;      /* max width so form isn’t too wide */
-  margin: 30px auto;     /* center horizontally with margin */
-  padding: 20px;
-  background-color: #f9f9f9;  /* light background */
-  border-radius: 8px;    /* rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
-  font-family: sans-serif;
-}
-
+/* Contact Form */
 .form h2 {
-  text-align: center;
   margin-bottom: 15px;
   color: #333;
+  text-align: center;
 }
 
 .form p {
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 25px;
-  color: #666;
-  font-size: 14px;
 }
 
-.form input[type="text"],
-.form input[type="email"],
-.form textarea {
+.input input,
+.email input,
+.text textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 12px;
   margin-bottom: 15px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 15px;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
+  font-size: 16px;
   font-family: sans-serif;
 }
 
-.form input[type="text"]:focus,
-.form input[type="email"]:focus,
-.form textarea:focus {
-  border-color: #007BFF; /* highlight on focus */
-  outline: none;
-}
-
-.form textarea {
-  resize: vertical; /* allow vertical resize only */
-  min-height: 120px;
-}
-
-.form input[type="submit"] {
-  width: 100%;
+.submit input[type="submit"] {
   background-color: #00ADB5;
   color: white;
-  padding: 12px 0;
   border: none;
-  border-radius: 4px;
-  font-size: 17px;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 16px;
+  
 }
 
-.form input[type="submit"]:hover {
-  background-color: #0056b3;
+.submit input[type="submit"]:hover {
+  background-color: #007e82;
+}
+
+.submit {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #313030;
+  padding: 20px;
+  margin-top: 40px;
+  color: #CCCCCC;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav a {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .star,
+  .form {
+    width: 100%;
+    max-width: 90%;
+    min-height: auto; /* Let height adjust naturally on mobile */
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
 }
